@@ -54,7 +54,7 @@ One of the first things you might want to do on any site, if you're not satisfie
         <span class="pl-mp">background-color</span>: <span class="pl-sc">blue</span>;
 }</pre></div>
 
-We're selecting the body element, which encompasses the entire page, and setting the background color to blue. Body is a**selector** and the background-color is a**property**. Look over the formatting in that code.
+We're selecting the body element, which encompasses the entire page, and setting the background color to blue. Body is a **selector** and the background-color is a **property**. Look over the formatting in that code.
 
 We have:
 
@@ -114,14 +114,104 @@ Open the Cloud 9 workspace where you were working on your website in the 'first 
 * Open the`index.html` file. Copy the entire contents of the file and paste it into`portfolio.html`
 * Save the`portfolio.html` file
 
-### TODO 2 : Remove and Add Content
+### TODO 2 : Change out CSS
+
+* Remove all of the CSS in between the `<style>` tags and replace it with the below CSS:
+
+```CSS
+body {
+    background: #7DC6CD;
+    color: #454545;
+    padding: 10px;
+    font-family: arial;
+}
+
+p {
+    width: 600px;
+}
+
+h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Main container area beneath menu */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #F5EEDB;
+}
+
+/* Content area within conatiner */
+.content {
+    padding: 15px;
+}
+
+/* Main menu */
+nav {
+    background: #EF5029;
+    height: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-image: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    padding-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Site Title */
+nav h1 {
+    float: left;
+    margin-top: 13px;
+    margin-left: 10px;
+    font-size: 21px;
+    color: #ffffff;
+}
+
+/* Portfolio page */
+ul.portfolio {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.portfolio li {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+ul.portfolio li:hover {
+    background: #eee;
+}
+
+.portfolio a {
+    text-decoration: none;
+    color: #454545;
+}
+```
+
+
+### TODO 3 : Remove and Add HTML
 
 *   Remove the entire 'sidebar' div
 *   Remove all of the content that's inside the 'content' div
 *   Create a heading with the`<h1>` tag called 'My Work'
 *   Create an unordered list with both a class and id of 'portfolio.' The items within this list will be added later.
 
-Your code should look like:
+Your HTML should look like:
 
 ```HTML
     <h1>My Work</h1>
@@ -130,7 +220,7 @@ Your code should look like:
     </ul>  
 ```
 
-### TODO 3 : Edit the CSS
+### TODO 4 : Edit the CSS
 
 Make sure you have the live preview window open on the portfolio page so you can see the changes you make in real time.
 
@@ -147,7 +237,7 @@ Make sure you have the live preview window open on the portfolio page so you can
 
 ### Go Live
 
-With[GitHub Pages](https://pages.github.com/), once you push your changes from your Cloud9 workspace up to your GitHub repository, your page will be live on the Internet.
+With [GitHub Pages](https://pages.github.com/), once you push your changes from your Cloud9 workspace up to your GitHub repository, your page will be live on the Internet.
 
 To do so, you'll need to enter the following git commands into your bash terminal. Select the bash terminal in the Console View - the bottom window pane in Cloud9.
 
@@ -159,6 +249,6 @@ Enter the following commands, pressing ENTER after each one:
 
 `git push`
 
-Give it a couple minutes and you should be able to view your website live on the web at[http://username.github.io!](http://username.github.io%21/) (Where 'username' is your own username.)
+Give it a couple minutes and you should be able to view your website live on the web at [http://username.github.io!](http://username.github.io%21/) (Where 'username' is your own username.)
 
 You are LIVE ON THE INTERNET!
