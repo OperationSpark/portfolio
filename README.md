@@ -5,13 +5,13 @@ Your Portfolio Page
 
 *   Students will require a GitHub account and will need to remember their GitHub username and password.
 *   Students will require a Cloud9 account - they will login to Cloud9 using their GitHub credentials.
-*   Students should have completed the 'Your First Website' lesson.
+*   Students should have completed the <a href="https://github.com/OperationSpark/first-website/blob/master/README.md" target="_blank">'Your First Website' lesson.</a>
 
 ## Overview
 
 ### Specs
 
-* At the end of the lesson students will have a basic understanding of Cascading Style Sheets (CSS) and added a Portfolio page to their website. 
+* At the end of the lesson students will have a basic understanding of Cascading Style Sheets (CSS) and added a Portfolio page to their website.  The portfolio page will list all of the projects we'll complete in our studies, and begin a decent resume of your coding skills! 
 
 ### Take Away
 
@@ -21,7 +21,9 @@ Your Portfolio Page
 
 ### Work Flow
 
-We're going to continue building out your website by adding a Portfolio page where you can show off your work. We'll also spruce up the site by further developing the design with CSS.
+We're going to continue building out your website by adding a portfolio page where you can show off your work. We'll also spruce up the site by further developing the design with CSS.
+
+To complete the assignment, below you'll find numbered **TODO** lesson steps. While reading this lesson, whenever you come across a TODO step, you are expected to implement this step, which may require you to create a file, or insert some HTML, CSS or JavaScript in the appropriate place. Please follow the instructions closely. Sometimes, however, we may be showing you code examples to make a point, so you only need to add code if we're explicitly telling you to do a lesson step, so please be aware of the actual lesson steps.
 
 ### Type of App
 
