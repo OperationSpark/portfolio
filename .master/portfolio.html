@@ -4,65 +4,56 @@
         <title>Sheba's Amazing Website</title>
         <style type="text/css">
             body {
-                background: #7DC6CD;
-                color: #454545;
+                background: rgb(125, 198, 205);
+                color: rgb(45, 45, 45);
                 padding: 10px;
                 font-family: arial;
             }
-            
-            p {
-                width: 600px;
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
             }
-            
             h1 {
-                margin-top: 5px;
-                margin-bottom: 5px;
+                margin: 10px;
             }
-            
-            /* Main container area beneath menu */
-            .container {
+            #all-contents {
                 max-width: 800px;
-                margin: 0 auto;
-                background: #F5EEDB;
+                margin: auto;
             }
-            
-            /* Content area within conatiner */
-            .content {
-                padding: 15px;
-            }
-            
-            
-            /* Main menu */
+    
+            /* Main navigation menu */
             nav {
-                background: #EF5029;
-                height: 50px;
-                max-width: 800px;
+                background: rgb(239, 80, 41);
                 margin: 0 auto;
-                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
             }
-            
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
             nav ul {
                 list-style-image: none;
-                float: right;
             }
-            
-            nav ul li {
-                display: inline;
-                padding-right: 20px;
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
             }
-            
             nav a {
                 text-decoration: none;
                 color: #fff;
             }
-            
-            /* Site Title */
-            nav h1 {
-                float: left;
-                margin-top: 13px;
-                margin-left: 10px;
-                font-size: 21px;
-                color: #ffffff;
+    
+            /* Main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
             }
             
             /* Portfolio page */
@@ -88,24 +79,24 @@
             }
         </style>
     </head>
-    
-    <body>  
-        <nav>
-            <header>Sheba's Glorious Website</header>
-            <ul>
-                <li><a href="index.html">Home</a>
-                </li>
-                <li><a href="portfolio.html">Portfolio</a>
-                </li>
-            </ul>
-        </nav>
-        <main>
-            <div class="content">
-                <h1>Portfolio</h1>
-                <ul id="portfolio" class="portfolio">
+    <body>
+        <div id="all-contents">
+            <nav>
+                <header>Sheba's Glorious Website</header>
+                <ul>
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li><a href="portfolio.html">Portfolio</a>
+                    </li>
                 </ul>
-            </div>
-        </main>
-    </div>
+            </nav>
+            <main>
+                <div class="content">
+                    <h1>Portfolio</h1>
+                    <ul id="portfolio" class="portfolio">
+                    </ul>
+                </div>
+            </main>
+        </div>
     </body>
 </html>
