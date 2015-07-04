@@ -93,7 +93,7 @@ A **margin** is the amount of space outside of an element. You can set it on all
 
 ## Classes and IDs
 
-When you want to get more specific than all of the HTML elements across a site you use classes and IDs to do that. You will often want to apply styling to only certain HTML elements rather than all of them. In the above code examples we're selecting the`<h1>`and`<p>` elements. The CSS styling you applied will change the look of all of the`<h1>`and`<p>` elements across the site.
+By more concretely describing HTML elements by assigning an id or class, we can select those elements uniquely by their id or grouped by their class. You will often want to apply styling to only certain HTML elements rather than all of them. In the above code examples we're selecting the`<h1>`and`<p>` elements. The CSS styling you applied will change the look of all of the`<h1>`and`<p>` elements across the site.
 
 Classes in CSS are created with a period and the class name:
 
@@ -105,15 +105,17 @@ Classes in CSS are created with a period and the class name:
 
 ## Setup
 
-Open the Cloud 9 workspace where you were working on your website in the 'first website' lesson.
+Open the Cloud9 workspace where you were working on your website from the 'first website' lesson. The workspace should be named something like `myusername_github_io`
 
 ## Lesson Steps
 
 ### TODO 1 : Add Portfolio Page
 
-* Right click in the file system and choose 'New File'
-* Name that file`portfolio.html`
-* Open the`index.html` file. Copy the entire contents of the file and paste it into`portfolio.html`
+* From the file system pane in Cloud9, within the root directory of your website, right click and choose `New File`
+* Name that file `portfolio.html`
+
+***
+* Open the `index.html` file. Copy the entire contents of the file and paste it into`portfolio.html`
 * Save the`portfolio.html` file
 
 ### TODO 2 : Change out CSS
