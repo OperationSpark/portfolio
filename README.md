@@ -328,7 +328,7 @@ Your Apache web server may still be running, and if it's not, review from our pr
 
 ### TODO 6 : Installing the opspark CLI
 
-Remember we said we were going to dynamically list projects we've installed in our portfolio page? Well in order to do so, we're going to install a commandline utility (cli) to help us with certain operations, like initializing scripts for us, and, install and configuring projects.
+Remember we said we were going to dynamically list projects we've installed in our portfolio page? Well, in order to do so, we're going to install a command-line utility (cli) to help us with certain operations, like initializing scripts, and installing and configuring projects.
 
 To do so, in Cloud9, select your bash terminal in the Console View, and enter the command `npm install -g opspark`, then press `Enter`.  It will take a few seconds to install all the files for the opspark cli...
 
