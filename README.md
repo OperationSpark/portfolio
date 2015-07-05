@@ -338,7 +338,7 @@ To do so, in Cloud9, select your bash terminal in the Console View, and enter th
 
 Once the opspark cli is installed, you can next initialize your `portfolio.html` page by running the following command:
 
-<img src="https://github.com/OperationSpark/portfolio/raw/master/img/init-pf.png">
+<img src="https://github.com/OperationSpark/portfolio/raw/master/img/os-init-pf.png">
 
 This will write a few `<script>` tags into your `portfolio.html` page so that in our next lessons, when we install projects, they will appear automatically in your portfolio!
 
