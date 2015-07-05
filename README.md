@@ -284,11 +284,11 @@ The text between the start and end of the tag, like the HERE in `<a>HERE</a>`, r
 
 The first part of the `<a>` tag requires the `href` attribute.  `href` stands for hypertext reference, and this value is the URL or file path to the page or file we want the browser to load when a user _clicks_ on our link.  The file paths `index.html` and `portfolio.html` are _relative_ paths, that is, they are relative in location to the file in which they occurr, in this case, the `portfolio.html` file.  Paths that include the full hard-drive location or an Internet domain are considered _absolute_ paths, as in, the fully qualified address of the file.
 
-Here's an example of an absolute file path:
+Here's an example of an absolute URL:
 
     https://github.com/OperationSpark/portfolio/blob/master/README.md
 
-Or, on your computer's file system:
+Or, on your computer, an absolute file path from the root directory of the file system:
 
     /home/ubuntu/workspace/README.md
 
