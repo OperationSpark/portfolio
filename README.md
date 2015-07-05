@@ -38,12 +38,14 @@ Your Portfolio Page
 
 ### Specs
 
-* At the end of the lesson, students will have a basic understanding of Cascading Style Sheets (CSS) and added a portfolio page to their website.  The portfolio page will list all of the projects we'll complete in our studies, and help begin a decent resume of your coding skills! 
+* At the end of the lesson, will have a portfolio page added to their website.  The portfolio page will list all of the projects we'll complete in our studies, and help begin a decent resume of your coding skills! In this lesson, we also delve a bit deeper into Cascading Style Sheets (CSS) and hyperlinks.
 
 ### Take Away
 
+* Building a web page from scratch
 * Basics of Cascading Style Sheets (CSS)
-* Basic web page navigation
+* Basic web page navigation through hyperlinks, aka anchor tags
+* Relative vs absolute file paths
 * Using git and GitHub
 
 ### Work Flow
@@ -280,7 +282,15 @@ Anchor tags are the original hypertext - they allow us to link one web page to a
 
 The text between the start and end of the tag, like the HERE in `<a>HERE</a>`, represents what the user will see on the web page as _clickable_.  In our nav, our anchor links use the text `Home` and `Portfolio`, so that's what will be displayed to the user in the nav bar. But links can wrap images or `<div>` tags or other HTML elements, making them _clickable_.
 
-The first part of the `<a>` tag requires the `href` attribute.  `href` stands for hypertext reference, and this value is the URL or file path to the page or file we want the browser to load when a user _clicks_ on our link.  The file paths `index.html` and `portfolio.html` are _relative_ paths, that is, they are relative in location to the file in which they occurr, in this case, the `portfolio.html` file.  Paths that include the full hard-drive location or an Internet domain are considered _absolute_ paths, as in, the full 
+The first part of the `<a>` tag requires the `href` attribute.  `href` stands for hypertext reference, and this value is the URL or file path to the page or file we want the browser to load when a user _clicks_ on our link.  The file paths `index.html` and `portfolio.html` are _relative_ paths, that is, they are relative in location to the file in which they occurr, in this case, the `portfolio.html` file.  Paths that include the full hard-drive location or an Internet domain are considered _absolute_ paths, as in, the fully qualified address of the file.
+
+Here's an example of an absolute file path:
+
+    https://github.com/OperationSpark/portfolio/blob/master/README.md
+
+Or, on your computer's file system:
+
+    /home/ubuntu/workspace/README.md
 
 #### Relative vs Absolute File Paths
 
@@ -316,9 +326,11 @@ Your Apache webserver may still be running, and if it's not, review from our pre
 
 ### Extra Credit
 
-You might have tricked out your index.html page from the last lesson, so you may want to take the time to match your CSS styles from your home page.
+At the end of the last lesson, first website, you might have tricked-out your `index.html` page by altering or adding custom CSS, so you may want to take the time to match the CSS styles in your `index.html` page to those here in your `portfolio.html` page.
 
-*   Google 'border radius' and add it to the `<nav>` element. 
+Here's some other things to try:
+
+*   Google 'border radius' and add it to the nav selector to give the `<nav>` element rounded corners
 *   Add a border around the image
 *   Change the color of the background
 
