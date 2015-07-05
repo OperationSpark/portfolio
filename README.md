@@ -43,9 +43,9 @@ To complete the assignment, below you'll find numbered **TODO** lesson steps. Wh
 
 We are building a website, to be viewed live on the web at your GitHub page, and it will be viewed in a web browser, like Chrome.
 
-### Intro to CSS
+## Intro to CSS
 
-**Cascading Style Sheets, or CSS, is what give websites style. Without CSS, the internet would be a very bland place.**
+Cascading Style Sheets, or CSS, is what give websites style. Without CSS, the internet would be a very bland place.
 
 Facebook with CSS:
 
