@@ -19,7 +19,7 @@ Your Portfolio Page
 
 * Students will require a GitHub account and will need to remember their GitHub username and password.
 * Students will require a Cloud9 account - they will login to Cloud9 using their GitHub credentials.
-* Students should have completed the <a href="https://github.com/OperationSpark/first-website/blob/master/README.md" target="_blank">'Your First Website' lesson.</a>
+* Students should have completed the <a href="https://github.com/OperationSpark/first-website/blob/master/README.md" target="_blank">First Website lesson.</a>
 
 ## Overview
 
