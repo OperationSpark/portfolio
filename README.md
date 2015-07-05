@@ -4,7 +4,6 @@ Your Portfolio Page
 
 **Table of Contents** 
 
-- [Portfolio](#portfolio)
 - [Your Portfolio Page](#your-portfolio-page)
   - [Prerequisites](#prerequisites)
   - [Overview](#overview)
