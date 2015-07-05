@@ -340,7 +340,7 @@ Once the opspark cli is installed, you can next initialize your `portfolio.html`
 
 <img src="https://github.com/OperationSpark/portfolio/raw/master/img/os-init-pf.png">
 
-This will write a few `<script>` tags into your `portfolio.html` page so that in our next lessons, when we install projects, they will appear automatically in your portfolio!
+This will write a few `<script>` tags into your `portfolio.html` page (as seen in the above image on lines 101 and 102 of the text editor in Cloud9) so that in our next lessons, when we install projects, they will appear automatically in your portfolio!
 
 <a href="https://www.npmjs.com/package/opspark" target="_blank">To learn more about the opspark cli, click here...</a>
 
