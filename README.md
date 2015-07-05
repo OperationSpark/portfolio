@@ -1,8 +1,10 @@
+
 Your Portfolio Page
 ===
 
-**Table of Contents**
+**Table of Contents** 
 
+- [Portfolio](#portfolio)
 - [Your Portfolio Page](#your-portfolio-page)
   - [Prerequisites](#prerequisites)
   - [Overview](#overview)
@@ -10,10 +12,22 @@ Your Portfolio Page
     - [Take Away](#take-away)
     - [Work Flow](#work-flow)
     - [Type of App](#type-of-app)
-    - [Intro to CSS](#intro-to-css)
+  - [Intro to CSS](#intro-to-css)
     - [Padding](#padding)
     - [Margins](#margins)
     - [Classes and IDs](#classes-and-ids)
+  - [Setup](#setup)
+  - [Lesson Steps](#lesson-steps)
+    - [TODO 1 : Create Portfolio Page](#todo-1--create-portfolio-page)
+    - [TODO 2 : Add a Title](#todo-2--add-a-title)
+    - [TODO 3 : Add CSS](#todo-3--add-css)
+    - [TODO 4 : Add Navigation](#todo-4--add-navigation)
+      - [The Skinny on Anchor Tags](#the-skinny-on-anchor-tags)
+      - [Relative vs Absolute File Paths](#relative-vs-absolute-file-paths)
+    - [TODO 5 : Create the Main Content](#todo-5--create-the-main-content)
+    - [Checking Your Work](#checking-your-work)
+    - [Extra Credit](#extra-credit)
+    - [Go Live](#go-live)
 
 ## Prerequisites
 
