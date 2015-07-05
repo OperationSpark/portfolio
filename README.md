@@ -3,9 +3,9 @@ Your Portfolio Page
 
 ## Prerequisites
 
-*   Students will require a GitHub account and will need to remember their GitHub username and password.
-*   Students will require a Cloud9 account - they will login to Cloud9 using their GitHub credentials.
-*   Students should have completed the <a href="https://github.com/OperationSpark/first-website/blob/master/README.md" target="_blank">'Your First Website' lesson.</a>
+* Students will require a GitHub account and will need to remember their GitHub username and password.
+* Students will require a Cloud9 account - they will login to Cloud9 using their GitHub credentials.
+* Students should have completed the <a href="https://github.com/OperationSpark/first-website/blob/master/README.md" target="_blank">'Your First Website' lesson.</a>
 
 ## Overview
 
@@ -15,9 +15,9 @@ Your Portfolio Page
 
 ### Take Away
 
-*   Basics of Cascading Style Sheets (CSS)
-*   Basic web page navigation
-*   Using git and GitHub
+* Basics of Cascading Style Sheets (CSS)
+* Basic web page navigation
+* Using git and GitHub
 
 ### Work Flow
 
@@ -31,44 +31,44 @@ We are building a website, to be viewed live on the web at your GitHub page, and
 
 ### Intro to CSS
 
-##### Cascading Style Sheets, or CSS, is what give websites style. Without CSS, the internet would be a very bland place.
+**Cascading Style Sheets, or CSS, is what give websites style. Without CSS, the internet would be a very bland place.**
 
 Facebook with CSS:
 
-![](https://github.com/OperationSpark/teacher-training-curriculum/raw/master/img/facebook-with-css.png)
+<img src="https://github.com/OperationSpark/teacher-training-curriculum/raw/master/img/facebook-with-css.png">
 
 Facebook without CSS:
 
-![](https://github.com/OperationSpark/teacher-training-curriculum/raw/master/img/facebook-without-css.png)
+<img src="https://github.com/OperationSpark/teacher-training-curriculum/raw/master/img/facebook-without-css.png">
 
 Here are just a few things you can do with CSS:
 
-*   Choose colors of everything on the page like the background, font, or main menu.
-*   Set the size of any element such as font size, width of the entire site, or an image
-*   Create borders or drop shadows around whole sites, images, and menus
-*   Change the state of items when hovering over them
+* Choose colors of everything on the page like the background, font, or main menu.
+* Set the size of any element such as font size, width of the entire site, or an image
+* Create borders or drop shadows around whole sites, images, and menus
+* Change the state of items when hovering over them
 
 To make CSS work you select an HTML element and assign various properties to it.
 
 One of the first things you might want to do on any site, if you're not satisfied with white, is to change the background color.
 
-```CSS
+````CSS
 body {
         background-color: blue;
     }
-```
+````
 
 Here, we're selecting the body element, which encompasses the entire page, and setting the background color to blue. The word, `body` is a **selector** and the `background-color` is a style **property**. Look over the formatting in the above CSS.
 
 We have:
 
-*   The selector
-*   A curly bracket
-*   The property
-*   A colon
-*   The value of the property
-*   A semicolon
-*   A curly bracket
+* The selector
+* A curly bracket
+* The property
+* A colon
+* The value of the property
+* A semicolon
+* A curly bracket
 
 The spacing and indenting matter a lot for legibility! You and your fellow developers will appreciate well formatted HTML, CSS, and JavaScript becasuse it will make it extremely easy to understand your intentions.  Pay close attention to indentation when coding!
 
@@ -80,14 +80,14 @@ Let's talk about a few more common CSS properties, that is, ways in which we can
 
 Here's an example of padding around a div:
 
-```CSS
+````CSS
 div {
         padding-top: 20px;
         padding-right: 10px;
         padding-bottom: 5px;
         padding-left: 0;
     }
-```
+````
 
 Remember that the `div` is the **selector** and there are four **properties** which apply to padding.
 
@@ -95,17 +95,17 @@ Remember that the `div` is the **selector** and there are four **properties** wh
 
 A **margin** is the amount of space outside of an element. You can set it on all four side like padding.
 
-## Classes and IDs
+### Classes and IDs
 
 By more concretely describing HTML elements by assigning an id or class, we can select those elements uniquely by their id or grouped by their class. You will often want to apply styling to only certain HTML elements rather than all of them. In the above code examples we're selecting the`<h1>`and`<p>` elements. The CSS styling you applied will change the look of all of the`<h1>`and`<p>` elements across the site.
 
 Classes in CSS are created with a period and the class name:
 
-```CSS
+````CSS
 .class-name {
     font-size: 20px;
 }
-```
+````
 
 Ok, let's move on to create our portfolio!
 
@@ -150,7 +150,7 @@ Add a title tag within the `<head>` tag of the portfolio.html page.  Use the sam
 
 Let's add some style! Within the `<head>` tag, but under the `<title>` tag you just created in the last step, copy and paste in the following CSS, include the `<style></style>` tags:
 
-```CSS
+````CSS
         <style type="text/css">
             body {
                 background: rgb(125, 198, 205);
@@ -227,7 +227,7 @@ Let's add some style! Within the `<head>` tag, but under the `<title>` tag you j
                 color: #454545;
             }
         </style>
-```
+````
 
 ### TODO 4 : Add Navigation
 
@@ -297,7 +297,7 @@ You might have tricked out your index.html page from the last lesson, so you may
 
 ### Go Live
 
-With [GitHub Pages](https://pages.github.com/), once you push your changes from your Cloud9 workspace up to your GitHub repository, your page will be live on the Internet.
+With GitHub Pages, once you push your changes from your Cloud9 workspace up to your GitHub repository, your page will be live on the Internet.
 
 To do so, you'll need to enter the following git commands into your bash terminal. Select the bash terminal in the Console View - the bottom window pane in Cloud9.
 
@@ -309,6 +309,6 @@ Enter the following commands, pressing ENTER after each one:
 
 `git push`
 
-Give it a couple minutes and you should be able to view the additions to your website live on the web at [http://username.github.io!](http://username.github.io%21/) (Where 'username' is your own GitHub username.)
+Give it a couple minutes and you should be able to view the additions to your website live on the web at `username.github.io` (Where `username` is your own GitHub username.)
 
 You now have a portfolio on the Internet, whoot!
