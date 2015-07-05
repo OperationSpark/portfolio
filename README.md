@@ -11,7 +11,7 @@ Your Portfolio Page
 
 ### Specs
 
-* At the end of the lesson students will have a basic understanding of Cascading Style Sheets (CSS) and added a Portfolio page to their website.  The portfolio page will list all of the projects we'll complete in our studies, and begin a decent resume of your coding skills! 
+* At the end of the lesson, students will have a basic understanding of Cascading Style Sheets (CSS) and added a portfolio page to their website.  The portfolio page will list all of the projects we'll complete in our studies, and help begin a decent resume of your coding skills! 
 
 ### Take Away
 
@@ -72,7 +72,7 @@ The spacing and indenting doesn't matter but it's best to format it like that fo
 
 ### Padding
 
-Now we're going to start playing with padding. **Padding** is the amount space around content that is inside of an element. You can set padding on all four sides of an element.
+**Padding** is the amount space around content that is inside of an element. You can set padding on all four sides of an element.
 
 Here's an example of padding around a div:
 
@@ -112,117 +112,161 @@ Open the Cloud9 workspace where you were working on your website from the 'first
 ### TODO 1 : Add Portfolio Page
 
 * From the file system pane in Cloud9, within the root directory of your website, right click and choose `New File`
-* Name that file `portfolio.html`
+* Name that file `portfolio.html` and double-click on it to open it in the Cloud9 text editor.
+* Finally, let's create the scaffolding HTML tags we need for any web page by adding the following HTML tags:
 
-***
-* Open the `index.html` file. Copy the entire contents of the file and paste it into`portfolio.html`
-* Save the`portfolio.html` file
+````HTML
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
 
-### TODO 2 : Change out CSS
+    <body>
+    </body>
+</html>
+````
 
-* Remove all of the CSS in between the `<style>` tags and replace it with the below CSS:
+Great, save the `portfolio.html` file.
+
+### TODO 2 : Add a Title
+
+Add a title tag within the `<head>` tag of the portfolio.html page.  Use the same title you used on your `index.html` page:
+
+````HTML
+    <head>
+        <title>Sheba's Amazing Website</title>
+    </head>
+````
+
+### TODO 3 : Add CSS
+
+Let's add some style!  Under the `<title>` tag you just created in the last step, copy and paste in the following CSS, include the `<style></style>` tags:
 
 ```CSS
-body {
-    background: #7DC6CD;
-    color: #454545;
-    padding: 10px;
-    font-family: arial;
-}
-
-p {
-    width: 600px;
-}
-
-h1 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-/* Main container area beneath menu */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: #F5EEDB;
-}
-
-/* Content area within conatiner */
-.content {
-    padding: 15px;
-}
-
-/* Main menu */
-nav {
-    background: #EF5029;
-    height: 50px;
-    max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-nav ul {
-    list-style-image: none;
-    float: right;
-}
-
-nav ul li {
-    display: inline;
-    padding-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Site Title */
-nav h1 {
-    float: left;
-    margin-top: 13px;
-    margin-left: 10px;
-    font-size: 21px;
-    color: #ffffff;
-}
-
-/* Portfolio page */
-ul.portfolio {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-ul.portfolio li {
-    background: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-ul.portfolio li:hover {
-    background: #eee;
-}
-
-.portfolio a {
-    text-decoration: none;
-    color: #454545;
-}
+        <style type="text/css">
+            body {
+                background: rgb(125, 198, 205);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            h1 {
+                margin: 10px;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                background: rgb(239, 80, 41);
+                margin: 0 auto;
+                display: flex;
+                padding: 10px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            
+            /* portfolio styles */
+            #portfolio {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            
+            #portfolio li {
+                background: #fff;
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+            
+            #portfolio li:hover {
+                background: #eee;
+            } 
+            
+            #portfolio a {
+                text-decoration: none;
+                color: #454545;
+            }
+        </style>
 ```
 
+### TODO 4 : Add Navigation
 
-### TODO 3 : Remove and Add HTML
+Within the `<body>` tag, insert the following structure to create our navigation:
 
-*   Remove the entire 'sidebar' div
-*   Remove all of the content that's inside the 'content' div
-*   Create a heading with the`<h1>` tag called 'My Work'
-*   Create an unordered list with both a class and id of 'portfolio.' The items within this list will be added later.
+````HTML
+        <nav>
+            <header>Sheba's Glorious Website</header>
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a>
+                </li>
+            </ul>
+        </nav>
+````
 
-Your HTML should look like:
+Here, we've added the same navigation on our home page, `index.html`.  It's common to have the same navigation options across an entire website, so the user can get to wherever from wherever!  Inside our `<nav>`, we have an unordered list, (`<ul>`), with 2 list items (`<li>`).  This list items contain anchor tags (`<a>`).  Anchor tags are the original hypertext - they allow us to link one web page to another web page.
 
-```HTML
-    <h1>My Work</h1>
-    <ul id="portfolio" class="portfolio">
+The first part of the `<a>` tag requires the `href` attribute.  `href` stands for hypertext reference, and this value is the URL or file path to the page or file we want the browser to load when a user _clicks_ on our link.  The file paths `index.html` and `portfolio.html` are _relative_ paths, that is, they are relative in location to the file in which they occurr, in this case, the `portfolio.html` file.  Paths that include the full hard-drive location or an Internet domain are considered _absolute_ paths, as in, the full 
 
-    </ul>  
-```
+One way to think of relative vs absolute path is to describe where the person sitting next to you is located.
+
+* Relative: "She's right next to me"
+* Absolute: "She's in the Universe, in the Milky Way galaxy, on planet Earth, in the north west hemisphere, in North America, in the United States, in Louisana, in New Orleans, in the CBD, in some office building, on the 17th floor, in room 1701, sitting at the desk number 1".
+
+Because we are able to relatively describe the location of the files to which we're linking in our website, we don't have to spell out their absolute path, and this is better for portability.  If we were to use absolute paths, but then move our website to another location, the absolute paths would change, and our links would break.
+
+In example of describing where the person sitting next to you is located, if you both move to another room, the relative description stays the same, but the absolute description does not!
+
+Ok, back to our nav links, the text between the start and tag `<a>HERE</a>` represents what the user will see on the web page as _clickable_.  In our nav, our anchor links use the text `Home` and `Portfolio`, but links can wrap images or divs or other HTML elements, making them _clickable_.
+
+### TODO 5 : Create the Main Content
+
+````HTML
+        <main>
+            <div class="content">
+                <h1>Portfolio</h1>
+                <ul id="portfolio" class="portfolio">
+                </ul>
+            </div>
+        </main>
+````
+
+Above, we created an unordered list with both a class and id of 'portfolio.' The items within this list will be added later.
+
+
 
 ### TODO 4 : Edit the CSS
 
