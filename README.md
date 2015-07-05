@@ -52,11 +52,13 @@ To make CSS work you select an HTML element and assign various properties to it.
 
 One of the first things you might want to do on any site, if you're not satisfied with white, is to change the background color.
 
-<div class="highlight highlight-css"><pre><span class="pl-ent">body</span> {
-        <span class="pl-mp">background-color</span>: <span class="pl-sc">blue</span>;
-}</pre></div>
+```CSS
+body {
+        background-color: blue;
+    }
+```
 
-We're selecting the body element, which encompasses the entire page, and setting the background color to blue. Body is a **selector** and the background-color is a **property**. Look over the formatting in that code.
+Here, we're selecting the body element, which encompasses the entire page, and setting the background color to blue. The word, `body` is a **selector** and the `background-color` is a style **property**. Look over the formatting in the above CSS.
 
 We have:
 
@@ -68,7 +70,9 @@ We have:
 *   A semicolon
 *   A curly bracket
 
-The spacing and indenting doesn't matter but it's best to format it like that for readability. Note that als
+The spacing and indenting matter a lot for legibility! You and your fellow developers will appreciate well formatted HTML, CSS, and JavaScript becasuse it will make it extremely easy to understand your intentions.  Pay close attention to indentation when coding!
+
+Let's talk about a few more common CSS properties, that is, ways in which we can alter an elements appearance.
 
 ### Padding
 
@@ -85,7 +89,7 @@ div {
     }
 ```
 
-Remember that the div is the selector and there are four properties which apply to padding.
+Remember that the `div` is the **selector** and there are four **properties** which apply to padding.
 
 ### Margins
 
@@ -103,17 +107,21 @@ Classes in CSS are created with a period and the class name:
 }
 ```
 
+Ok, let's move on to create our portfolio!
+
 ## Setup
 
 Open the Cloud9 workspace where you were working on your website from the 'first website' lesson. The workspace should be named something like `myusername_github_io`
 
 ## Lesson Steps
 
-### TODO 1 : Add Portfolio Page
+### TODO 1 : Create Portfolio Page
 
-* From the file system pane in Cloud9, within the root directory of your website, right click and choose `New File`
-* Name that file `portfolio.html` and double-click on it to open it in the Cloud9 text editor.
-* Finally, let's create the scaffolding HTML tags we need for any web page by adding the following HTML tags:
+We're going to build the page from scratch:
+
+* From the file system pane in Cloud9, and within the root directory of your website, right click and choose `New File`, and name the file `portfolio.html`.  When your done with this step, you should have two HTML files next to each other in the root directory of your website, `index.html` and `portfolio.html`.
+* Double-click on the `portfolio.html` file to open it in the Cloud9 text editor.
+* Finally, within the `portfolio.html` file, let's create the scaffolding HTML tags we need for any web page by adding the following HTML tags:
 
 ````HTML
 <!DOCTYPE HTML>
@@ -271,6 +279,13 @@ In the example of describing _where_ the person sitting next to you is _located_
 ````
 
 Above, we created an unordered list with an `id` of `portfolio`.  This will allow us to access the portfolio `<ul>` to style it, which we are doing with a CSS selector, _and_, to use JavaScript to _dynamically_ add list items to our portfolio list. Right now, there's no items in the list, but later, when we install projects, we'll see our projects begin to list themselves, to appear dynamically in our portfolio page. The term dynamic means _constant change, activity, or progress_, which describes the state of our web page in that we can change it on the fly and thus its not _static_, which is the opposite of dynamic.
+
+### Checking Your Work
+
+Your Apache webserver may still be running, and if it's not, review from our previous lesson, **first website**, the following sections:
+
+* <a href="https://github.com/OperationSpark/first-website/blob/master/README.md#serve-your-website">serve your website</a>
+* <a href="https://github.com/OperationSpark/first-website/blob/master/README.md#serve-only-the-index-page">serve-only-the-index-page</a>
 
 ### Extra Credit
 
