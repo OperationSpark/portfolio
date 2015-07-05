@@ -99,9 +99,9 @@ We have:
 * A semicolon
 * A curly bracket
 
-The spacing and indenting matter a lot for legibility! You and your fellow developers will appreciate well formatted HTML, CSS, and JavaScript becasuse it will make it extremely easy to understand your intentions.  Pay close attention to indentation when coding!
+The spacing and indenting matter a lot for legibility! You and your fellow developers will appreciate well formatted HTML, CSS, and JavaScript because it will make it extremely easy to understand your intentions.  Pay close attention to indentation when coding!
 
-Let's talk about a few more common CSS properties, that is, ways in which we can alter an elements appearance.
+Let's talk about a few more common CSS properties, that is, ways in which we can alter an element's appearance.
 
 ### Padding
 
@@ -126,7 +126,7 @@ A **margin** is the amount of space outside of an element. You can set it on all
 
 ### Classes and IDs
 
-By more concretely describing HTML elements by assigning an id or class, we can select those elements uniquely by their id or grouped by their class. You will often want to apply styling to only certain HTML elements rather than all of them. In the above code examples we're selecting the `<h1>` and `<p>` elements. The CSS styling you applied will change the look of all of the `<h1>` and `<p>` elements across the site.
+By more concretely describing HTML elements by assigning an id or class, we can select those elements uniquely by their id or grouped by their class. You will often want to apply styling to only certain HTML elements rather than all of them. In the above code examples we're selecting the `<h1>` and `<p>` elements. The CSS styling you applied will change the look of all of the `<h1>` and `<p>` elements across the site.
 
 Classes in CSS are created with a period and the class name:
 
@@ -282,7 +282,7 @@ Anchor tags are the original hypertext - they allow us to link one web page to a
 
 The text between the start and end of the tag, like the HERE in `<a>HERE</a>`, represents what the user will see on the web page as _clickable_.  In our nav, our anchor links use the text `Home` and `Portfolio`, so that's what will be displayed to the user in the nav bar. But links can wrap images or `<div>` tags or other HTML elements, making them _clickable_.
 
-The first part of the `<a>` tag requires the `href` attribute.  `href` stands for hypertext reference, and this value is the URL or file path to the page or file we want the browser to load when a user _clicks_ on our link.  The file paths `index.html` and `portfolio.html` are _relative_ paths, that is, they are relative in location to the file in which they occurr, in this case, the `portfolio.html` file.  Paths that include the full hard-drive location or an Internet domain are considered _absolute_ paths, as in, the fully qualified address of the file.
+The first part of the `<a>` tag requires the `href` attribute.  `href` stands for hypertext reference, and this value is the URL or file path to the page or file we want the browser to load when a user _clicks_ on our link.  The file paths `index.html` and `portfolio.html` are _relative_ paths, that is, they are relative in location to the file in which they occur, in this case, the `portfolio.html` file.  Paths that include the full hard-drive location or an Internet domain are considered _absolute_ paths, as in, the fully qualified address of the file.
 
 Here's an example of an absolute URL:
 
@@ -297,7 +297,7 @@ Or, on your computer, an absolute file path from the root directory of the file 
 One way to think of relative vs absolute paths is to describe _where_ the person sitting next to you is _located_.
 
 * Relative: "She's right next to me"
-* Absolute: "She's in the Universe, in the Milky Way galaxy, on planet Earth, in the north west hemisphere, in North America, in the United States, in Louisana, in New Orleans, in the CBD, in some office building, on the 17th floor, in room 1701, sitting at the desk number 1".
+* Absolute: "She's in the Universe, in the Milky Way galaxy, on planet Earth, in the north west hemisphere, in North America, in the United States, in Louisiana, in New Orleans, in the CBD, in some office building, on the 17th floor, in room 1701, sitting at the desk number 1".
 
 Because we are able to relatively describe the location of the files to which we're linking in our website, we don't have to spell out their absolute path, and this is better for portability.  If we were to use absolute paths, but then move our website to another part of the file system or to another computer, the absolute paths would change, and our links would break.
 
@@ -319,7 +319,7 @@ Above, we created an unordered list with an `id` of `portfolio`.  This will allo
 
 ### Checking Your Work
 
-Your Apache webserver may still be running, and if it's not, review from our previous lesson, **first website**, the following sections:
+Your Apache web server may still be running, and if it's not, review from our previous lesson, **first website**, the following sections:
 
 * <a href="https://github.com/OperationSpark/first-website/blob/master/README.md#serve-your-website">serve your website</a>
 * <a href="https://github.com/OperationSpark/first-website/blob/master/README.md#serve-only-the-index-page">serve-only-the-index-page</a>
@@ -348,6 +348,6 @@ Enter the following commands, pressing ENTER after each one:
 
 `git push`
 
-Give it a couple minutes and you should be able to view the additions to your website live on the web at `username.github.io` (Where `username` is your own GitHub username.)
+Give it a couple minutes and you should be able to view the additions to your website live on the web at `username.github.io` (Where `username` is your own GitHub username.)
 
 You now have a portfolio on the Internet, whoot!
