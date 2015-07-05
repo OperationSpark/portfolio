@@ -1,6 +1,20 @@
 Your Portfolio Page
 ===
 
+**Table of Contents**
+
+- [Your Portfolio Page](#your-portfolio-page)
+  - [Prerequisites](#prerequisites)
+  - [Overview](#overview)
+    - [Specs](#specs)
+    - [Take Away](#take-away)
+    - [Work Flow](#work-flow)
+    - [Type of App](#type-of-app)
+    - [Intro to CSS](#intro-to-css)
+    - [Padding](#padding)
+    - [Margins](#margins)
+    - [Classes and IDs](#classes-and-ids)
+
 ## Prerequisites
 
 * Students will require a GitHub account and will need to remember their GitHub username and password.
@@ -97,7 +111,7 @@ A **margin** is the amount of space outside of an element. You can set it on all
 
 ### Classes and IDs
 
-By more concretely describing HTML elements by assigning an id or class, we can select those elements uniquely by their id or grouped by their class. You will often want to apply styling to only certain HTML elements rather than all of them. In the above code examples we're selecting the`<h1>`and`<p>` elements. The CSS styling you applied will change the look of all of the`<h1>`and`<p>` elements across the site.
+By more concretely describing HTML elements by assigning an id or class, we can select those elements uniquely by their id or grouped by their class. You will often want to apply styling to only certain HTML elements rather than all of them. In the above code examples we're selecting the `<h1>` and `<p>` elements. The CSS styling you applied will change the look of all of the `<h1>` and `<p>` elements across the site.
 
 Classes in CSS are created with a period and the class name:
 
