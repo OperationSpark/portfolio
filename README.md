@@ -25,6 +25,8 @@ Your Portfolio Page
       - [Relative vs Absolute File Paths](#relative-vs-absolute-file-paths)
     - [TODO 5 : Create the Main Content](#todo-5--create-the-main-content)
     - [Checking Your Work](#checking-your-work)
+    - [TODO 6 : Installing the opspark CLI](#todo-6--installing-the-opspark-cli)
+    - [TODO 7 : Initialize your Portfolio](#todo-7--initialize-your-portfolio)
     - [Extra Credit](#extra-credit)
     - [Go Live](#go-live)
 
@@ -323,6 +325,24 @@ Your Apache web server may still be running, and if it's not, review from our pr
 
 * <a href="https://github.com/OperationSpark/first-website/blob/master/README.md#serve-your-website">serve your website</a>
 * <a href="https://github.com/OperationSpark/first-website/blob/master/README.md#serve-only-the-index-page">serve-only-the-index-page</a>
+
+### TODO 6 : Installing the opspark CLI
+
+Remember we said we were going to dynamically list projects we've installed in our portfolio page? Well in order to do so, we're going to install a commandline utility (cli) to help us with certain operations, like initializing scripts for us, and, install and configuring projects.
+
+To do so, in Cloud9, select your bash terminal in the Console View, and enter the command `npm install -g opspark`, then press `Enter`.  It will take a few seconds to install all the files for the opspark cli...
+
+<img src="https://github.com/OperationSpark/portfolio/raw/master/img/install-opspark.png">
+
+### TODO 7 : Initialize your Portfolio
+
+Once the opspark cli is installed, you can next initialize your `portfolio.html` page by running the following command:
+
+<img src="https://github.com/OperationSpark/portfolio/raw/master/img/init-pf.png">
+
+This will write a few `<script>` tags into your `portfolio.html` page so that in our next lessons, when we install projects, they will appear automatically in your portfolio!
+
+<a href="https://www.npmjs.com/package/opspark" target="_blank">To learn more about the opspark cli, click here...</a>
 
 ### Extra Credit
 
