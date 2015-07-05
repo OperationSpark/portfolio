@@ -140,7 +140,7 @@ Add a title tag within the `<head>` tag of the portfolio.html page.  Use the sam
 
 ### TODO 3 : Add CSS
 
-Let's add some style!  Under the `<title>` tag you just created in the last step, copy and paste in the following CSS, include the `<style></style>` tags:
+Let's add some style! Within the `<head>` tag, but under the `<title>` tag you just created in the last step, copy and paste in the following CSS, include the `<style></style>` tags:
 
 ```CSS
         <style type="text/css">
@@ -237,20 +237,26 @@ Within the `<body>` tag, insert the following structure to create our navigation
         </nav>
 ````
 
-Here, we've added the same navigation on our home page, `index.html`.  It's common to have the same navigation options across an entire website, so the user can get to wherever from wherever!  Inside our `<nav>`, we have an unordered list, (`<ul>`), with 2 list items (`<li>`).  This list items contain anchor tags (`<a>`).  Anchor tags are the original hypertext - they allow us to link one web page to another web page.
+Here, we've added the same navigation on our home page, `index.html`.  It's common to have the same navigation options across an entire website, so the user can get to wherever from wherever!  Inside our `<nav>`, we have an unordered list, (`<ul>`), with 2 list items (`<li>`).  This list items contain anchor tags (`<a>`).
+
+#### The Skinny on Anchor Tags
+
+Anchor tags are the original hypertext - they allow us to link one web page to another web page, and also making things on a web page, _clickable_.
+
+The text between the start and end of the tag, like the HERE in `<a>HERE</a>`, represents what the user will see on the web page as _clickable_.  In our nav, our anchor links use the text `Home` and `Portfolio`, so that's what will be displayed to the user in the nav bar. But links can wrap images or `<div>` tags or other HTML elements, making them _clickable_.
 
 The first part of the `<a>` tag requires the `href` attribute.  `href` stands for hypertext reference, and this value is the URL or file path to the page or file we want the browser to load when a user _clicks_ on our link.  The file paths `index.html` and `portfolio.html` are _relative_ paths, that is, they are relative in location to the file in which they occurr, in this case, the `portfolio.html` file.  Paths that include the full hard-drive location or an Internet domain are considered _absolute_ paths, as in, the full 
 
-One way to think of relative vs absolute path is to describe where the person sitting next to you is located.
+#### Relative vs Absolute File Paths
+
+One way to think of relative vs absolute paths is to describe _where_ the person sitting next to you is _located_.
 
 * Relative: "She's right next to me"
 * Absolute: "She's in the Universe, in the Milky Way galaxy, on planet Earth, in the north west hemisphere, in North America, in the United States, in Louisana, in New Orleans, in the CBD, in some office building, on the 17th floor, in room 1701, sitting at the desk number 1".
 
-Because we are able to relatively describe the location of the files to which we're linking in our website, we don't have to spell out their absolute path, and this is better for portability.  If we were to use absolute paths, but then move our website to another location, the absolute paths would change, and our links would break.
+Because we are able to relatively describe the location of the files to which we're linking in our website, we don't have to spell out their absolute path, and this is better for portability.  If we were to use absolute paths, but then move our website to another part of the file system or to another computer, the absolute paths would change, and our links would break.
 
-In example of describing where the person sitting next to you is located, if you both move to another room, the relative description stays the same, but the absolute description does not!
-
-Ok, back to our nav links, the text between the start and tag `<a>HERE</a>` represents what the user will see on the web page as _clickable_.  In our nav, our anchor links use the text `Home` and `Portfolio`, but links can wrap images or divs or other HTML elements, making them _clickable_.
+In the example of describing _where_ the person sitting next to you is _located_, if you both move to another room, the relative description stays the same (right next to me), but the absolute description does not (we have to account for the fact that we're in a different room, at different desks, etc)!
 
 ### TODO 5 : Create the Main Content
 
@@ -258,28 +264,19 @@ Ok, back to our nav links, the text between the start and tag `<a>HERE</a>` repr
         <main>
             <div class="content">
                 <h1>Portfolio</h1>
-                <ul id="portfolio" class="portfolio">
+                <ul id="portfolio">
                 </ul>
             </div>
         </main>
 ````
 
-Above, we created an unordered list with both a class and id of 'portfolio.' The items within this list will be added later.
-
-
-
-### TODO 4 : Edit the CSS
-
-Make sure you have the live preview window open on the portfolio page so you can see the changes you make in real time.
-
-*   In the portfolio.html file, go to the top and find the CSS.
-*   At the tip, under the `body` selector change the background color to `magenta`
-*   Change the width of the `.container` element to 500px. Save the file and refresh the preview window if needed.
-*   Change it back to 800px.
+Above, we created an unordered list with an `id` of `portfolio`.  This will allow us to access the portfolio `<ul>` to style it, which we are doing with a CSS selector, _and_, to use JavaScript to _dynamically_ add list items to our portfolio list. Right now, there's no items in the list, but later, when we install projects, we'll see our projects begin to list themselves, to appear dynamically in our portfolio page. The term dynamic means _constant change, activity, or progress_, which describes the state of our web page in that we can change it on the fly and thus its not _static_, which is the opposite of dynamic.
 
 ### Extra Credit
 
-*   Google 'border radius' and add it to the `<nav>` element.
+You might have tricked out your index.html page from the last lesson, so you may want to take the time to match your CSS styles from your home page.
+
+*   Google 'border radius' and add it to the `<nav>` element. 
 *   Add a border around the image
 *   Change the color of the background
 
@@ -293,10 +290,10 @@ Enter the following commands, pressing ENTER after each one:
 
 `git add .`
 
-`git commit -m 'First commit'`
+`git commit -m 'add portfolio.html file'`
 
 `git push`
 
-Give it a couple minutes and you should be able to view your website live on the web at [http://username.github.io!](http://username.github.io%21/) (Where 'username' is your own username.)
+Give it a couple minutes and you should be able to view the additions to your website live on the web at [http://username.github.io!](http://username.github.io%21/) (Where 'username' is your own GitHub username.)
 
-You are LIVE ON THE INTERNET!
+You now have a portfolio on the Internet, whoot!
