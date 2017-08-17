@@ -14,7 +14,7 @@
   "scripts": {
     "post-test": "rm -rf ../portfolio",
     "serve": "node ./test/server.js",
-    "test": "mocha ./test/index.spec.js",
+    "test": "mocha ./test/portfolio.spec.js",
     "start": "concurrently --kill-others \"npm run serve\" \"npm test\""
   }
 }
