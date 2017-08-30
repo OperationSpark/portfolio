@@ -8,13 +8,13 @@
     "concurrently": "^3.4.0",
     "express": "^4.15.3",
     "mocha": "^3.4.1",
-    "underscore": "^1.8.3",
     "zombie": "^5.0.5"
   },
   "scripts": {
-    "posttest": "rm -rf ../portfolio-page",
     "serve": "node ./test/server.js",
-    "test": "mocha ./test/portfolio.spec.js",
+    "pretest": "npm install",
+    "test": "mocha ./test/index.spec.js",
+    "posttest": "rm -rf ../portfolio-page",
     "start": "concurrently --kill-others \"npm run serve\" \"npm test\""
   }
 }
