@@ -11,7 +11,7 @@
   },
   "scripts": {
     "pretest": "npm install",
-    "test": "mocha ./test/index.spec.js",
-    "posttest": "rm -rf ../portfolio-page",
+    "test": "mocha ./test/index.spec.js || :",
+    "posttest": "rm -rf ../portfolio-page"
   }
 }
