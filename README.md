@@ -163,6 +163,9 @@ We're going to build the page from scratch:
     </head>
 
     <body>
+      <div id="all-contents">
+      
+      </div>
     </body>
 </html>
 ````
