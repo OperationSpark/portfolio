@@ -14,8 +14,6 @@ app.use(express.static(path.join(__dirname, '../../../')));
 app.listen(PORT, () => console.log(`Running on http://localhost:${PORT}`));
 
 describe('Portfolio', function(){
-  console.log('OS-START');
-
   beforeEach(function(done) {
     browser.visit(server, done);
   });
