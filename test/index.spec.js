@@ -5,8 +5,8 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const Browser = require('zombie');
 const browser = new Browser();
-const PORT = 7777;
 const app = express();
+const PORT = 7777;
 const server = `http://localhost:${PORT}/portfolio.html`;
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -14,7 +14,6 @@ app.use(express.static(path.join(__dirname, '../../../')));
 app.listen(PORT, () => console.log(`Running on http://localhost:${PORT}`));
 
 describe('Portfolio', function(){
-
   beforeEach(function(done) {
     browser.visit(server, done);
   });
