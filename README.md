@@ -240,7 +240,11 @@ Let's add some style! Within the `<head>` tag, but under the `<title>` tag you j
                 flex: 1;
                 padding: 15px;
             }
-            
+````
+
+Make sure this styling matches the styling for your index.html page! Now add some styling that is unique to portfolio:
+
+````CSS
             /* portfolio styles */
             #portfolio {
                 list-style-type: none;
