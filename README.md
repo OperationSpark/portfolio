@@ -240,9 +240,10 @@ Let's add some style! Within the `<head>` tag, but under the `<title>` tag you j
                 flex: 1;
                 padding: 15px;
             }
+        </style>
 ````
 
-Make sure this styling matches the styling for your index.html page! Now add some styling that is unique to portfolio:
+Make sure this styling matches the styling for your index.html page! Now add some styling that is unique to portfolio. Paste this within your `style` tags:
 
 ````CSS
             /* portfolio styles */
@@ -266,7 +267,6 @@ Make sure this styling matches the styling for your index.html page! Now add som
                 text-decoration: none;
                 color: #454545;
             }
-        </style>
 ````
 
 ### TODO 4 : Add Navigation
