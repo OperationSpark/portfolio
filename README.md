@@ -316,6 +316,13 @@ In the example of describing _where_ the person sitting next to you is _located_
 
 ### TODO 5 : Create the Main Content
 
+Now we want to create a place where our work throughout the course will be displayed. 
+* Beneath `<nav>` create a pair of `<main>` tags. 
+* Nested within the `<main>` tags create a `<div>` with `class="content"`
+* Add an `<h1>` header and title this section `Portfolio`
+* Lastly, add an unordered lists `<ul>` with `id="portfolio"`
+
+Your code will look like this...
 ````HTML
         <main>
             <div class="content">
@@ -326,7 +333,7 @@ In the example of describing _where_ the person sitting next to you is _located_
         </main>
 ````
 
-Above, we created an unordered list with an `id` of `portfolio`.  This will allow us to access the portfolio `<ul>` to style it, which we are doing with a CSS selector, _and_, to use JavaScript to _dynamically_ add list items to our portfolio list. Right now, there's no items in the list, but later, when we install projects, we'll see our projects begin to list themselves, to appear dynamically in our portfolio page. The term dynamic means _constant change, activity, or progress_, which describes the state of our web page in that we can change it on the fly and thus its not _static_, which is the opposite of dynamic.
+So, we created an unordered list with an `id` of `portfolio`.  This will allow us to access the portfolio `<ul>` to style it, which we are doing with a CSS selector, _and_, to use JavaScript to _dynamically_ add list items to our portfolio list. Right now, there's no items in the list, but later, when we install projects, we'll see our projects begin to list themselves, to appear dynamically in our portfolio page. The term dynamic means _constant change, activity, or progress_, which describes the state of our web page in that we can change it on the fly and thus its not _static_, which is the opposite of dynamic.
 
 ### Checking Your Work
 
