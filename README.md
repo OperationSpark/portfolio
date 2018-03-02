@@ -243,7 +243,11 @@ Let's add some style! Within the `<head>` tag, but under the `<title>` tag you j
         </style>
 ````
 
-Make sure this styling matches the styling for your index.html page! Now add some styling that is unique to portfolio. Paste this within your `style` tags:
+We want our portfolio page to fit with our Home page so copy over any changes you made to the CSS in `index.html`! 
+
+### TODO 3: Part 2, Style the portfolio
+
+Now add some styling that is unique to portfolio. Paste this within your `style` tags below the `.content` block:
 
 ````CSS
             /* portfolio styles */
