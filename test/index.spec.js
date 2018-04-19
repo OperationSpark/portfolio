@@ -30,8 +30,8 @@ describe('Portfolio', function(){
   it('should have basic layout for nav tag', function(done){
     browser.assert.elements('nav > header', 1);
     browser.assert.elements('nav > ul', 1);
-    browser.assert.elements('nav > ul > li', 2);
-    browser.assert.elements('nav > ul > li > a', 2);
+    browser.assert.elements('nav > ul > li', { atLeast: 2 });
+    browser.assert.elements('nav > ul > li > a', { atLeast: 2 });
     done();
   });
 
