@@ -31,13 +31,14 @@ describe('Portfolio', function(){
     singleTags.forEach((tag) => {
       it(`should have <${tag}> tag`, function(done) {
         browser.assert.elements(tag, { atLeast: 1 }, `<${tag}> tag does not exist`);
-        browser.assert.elements(tag, 1, `More/less than 1 <${tag}> tag exists`);
+        browser.assert.elements(tag, 1, `More than 1 <${tag}> tag exists`);
         done();
       });
     });
 
     it('should have <title> tag inside <head> tag', function(done){
-      browser.assert.elements('title', 1, 'More/less than 1 <title> tag exists');
+      browser.assert.elements('title', { atLeast: 1 }, '<title> tag does not exist');
+      browser.assert.elements('title', 1, 'More than 1 <title> tag exists');
       browser.assert.elements('head > title', 1, '<title> tag is not inside <head> tag');
       done();
     });
@@ -51,13 +52,15 @@ describe('Portfolio', function(){
 
   describe('nav layout', function() {
     it('should have <nav> tag inside <div> tag with id "all-contents"', function(done){
-      browser.assert.elements('nav', 1, 'More/less than 1 <nav> tag exists');
+      browser.assert.elements('nav', { atLeast: 1 }, 'More than 1 <nav> tag exists');
+      browser.assert.elements('nav', 1, 'More than 1 <nav> tag exists');
       browser.assert.elements('div#all-contents > nav', 1, '<nav> tag is not inside <div> tag with id "all-contents"');
       done();
     });
 
     it('should have <header> tag inside <nav> tag', function(done){
-      browser.assert.elements('header', 1, 'More/less than 1 <header> tag exists');
+      browser.assert.elements('header', { atLeast: 1 }, '<header> tag does not exist');
+      browser.assert.elements('header', 1, 'More than 1 <header> tag exists');
       browser.assert.elements('nav > header', 1, '<header> tag is not inside <nav> tag');
       done();
     });
@@ -83,13 +86,14 @@ describe('Portfolio', function(){
 
   describe('main layout', function(){
     it('should have <main> tag inside <div> tag with id "all-contents"', function(done) {
-      browser.assert.elements('main', 1, 'More/less than 1 <main> tag exists');
+      browser.assert.elements('main', { atLeast: 1 }, '<main> tag does not exist');
+      browser.assert.elements('main', 1, 'More than 1 <main> tag exists');
       browser.assert.elements('div#all-contents > main', 1, '<main> tag is not inside <div> tag with id "all-contents"');
       done();
     });
 
     it('should have <div> tag, with class "content," inside <main> tag', function(done){
-      browser.assert.elements('div', { atLeast: 1 }, '<div> tag does not exist');
+      browser.assert.elements('div', { atLeast: 2 }, 'Second <div> tag does not exist');
       browser.assert.elements('main > div', 1, '<div> tag is not inside <main> tag');
       browser.assert.elements('main > div.content', 1, '<div> tag does not have class "content"');
       done();
