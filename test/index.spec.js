@@ -19,11 +19,12 @@ describe('Portfolio', function(){
   });
 
   it('should have basic layout', function(done){
-    browser.assert.elements('head', 1);
-    browser.assert.elements('head > title', 1);
-    browser.assert.elements('body', 1);
-    browser.assert.elements('nav', 1);
-    browser.assert.elements('main', 1);
+    browser.assert.elements('head', 1, '<head> tag should exist');
+    browser.assert.elements('title', 1, '<title> tag should exist inside <head> tag');
+    browser.assert.elements('head > title', 1, '<title> tag should be inside <head> tag');
+    browser.assert.elements('body', 1, '<body> tag should exist');
+    browser.assert.elements('nav', 1, '<nav> tag should exist');
+    browser.assert.elements('main', 1, '<main> tag should exist');
     done();
   });
 
