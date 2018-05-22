@@ -87,8 +87,8 @@ One of the first things you might want to do on any site, if you're not satisfie
 
 ````CSS
 body {
-        background-color: blue;
-    }
+  background-color: blue;
+}
 ````
 
 Here, we're selecting the body element, which encompasses the entire page, and setting the background color to blue. The word, `body` is a **selector** and the `background-color` is a style **property**. Look over the formatting in the above CSS.
@@ -115,11 +115,11 @@ Here's an example of padding around a div:
 
 ````CSS
 div {
-        padding-top: 20px;
-        padding-right: 10px;
-        padding-bottom: 5px;
-        padding-left: 0;
-    }
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 0;
+}
 ````
 
 Remember that the `div` is the **selector** and there are four **properties** which apply to padding.
@@ -130,13 +130,31 @@ A **margin** is the amount of space outside of an element. You can set it on all
 
 ### Classes and IDs
 
-By more concretely describing HTML elements by assigning an id or class, we can select those elements uniquely by their id or grouped by their class. You will often want to apply styling to only certain HTML elements rather than all of them. In the above code examples we're selecting the `<h1>` and `<p>` elements. The CSS styling you applied will change the look of all of the `<h1>` and `<p>` elements across the site.
+By more concretely describing HTML elements by assigning an id or class, we can select those elements uniquely by their id or grouped by their class. You will often want to apply styling to only certain HTML elements rather than all of them. In the above code examples we're selecting the `<div>` elements. The CSS styling you applied will change the look of all of the `<div>` elements across the site. To give an element a class or id we can add an attribute to their HTML tag:
 
-Classes in CSS are created with a period and the class name:
+````HTML
+<div class="myClass">
+  <!-- div content goes here -->
+</div>
+
+<div id="myId">
+  <!-- div content goes here -->
+</div>
+````
+
+class selectors in CSS are created with a period and the class name:
 
 ````CSS
-.class-name {
-    font-size: 20px;
+.myClass {
+  background-color: blue;
+}
+````
+
+id selectors in CSS are created with a hashtag and the id name:
+
+````CSS
+#myId {
+  background-color: red;
 }
 ````
 
