@@ -158,7 +158,7 @@ id selectors in CSS are created with a hashtag and the id name:
 }
 ````
 
-Ok, let's move on to create our portfolio!
+Now, only the first `<div>` with `class="myClass"` will have a blue background. Meanwhile only the `<div>` with `id=myId` will hvae a red background. Ok, let's move on to create our portfolio!
 
 ## Setup
 
