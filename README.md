@@ -293,9 +293,10 @@ Now add some styling that is unique to portfolio. Paste this within your `style`
 
 ### TODO 4 : Add Navigation
 
-Within the `<body>` tag, insert the following structure to create our navigation:
+Within the `<div id="all-contents">` tag, insert the following structure to create our navigation:
 
 ````HTML
+    <div id="all-contents">
         <nav>
             <header>Sheba's Glorious Website</header>
             <ul>
@@ -305,6 +306,7 @@ Within the `<body>` tag, insert the following structure to create our navigation
                 </li>
             </ul>
         </nav>
+    </div>
 ````
 
 Here, we've added the same navigation on our home page, `index.html`.  It's common to have the same navigation options across an entire website, so the user can get to wherever from wherever!  Inside our `<nav>`, we have an unordered list, (`<ul>`), with 2 list items (`<li>`).  This list items contain anchor tags (`<a>`).
@@ -339,13 +341,16 @@ In the example of describing _where_ the person sitting next to you is _located_
 ### TODO 5 : Create the Main Content
 
 Now we want to create a place where our work throughout the course will be displayed. 
-* Beneath `<nav>` create a pair of `<main>` tags. 
+* Beneath the entire `<nav></nav>` section create a pair of `<main>` tags. 
 * Nested within the `<main>` tags create a `<div>` with `class="content"`
 * Add an `<h1>` header and title this section `Portfolio`
 * Lastly, add an unordered lists `<ul>` with `id="portfolio"`
 
 Your code will look like this...
 ````HTML
+        <nav>
+            <!-- Nav stuff here...-->
+        </nav> 
         <main>
             <div class="content">
                 <h1>Portfolio</h1>
