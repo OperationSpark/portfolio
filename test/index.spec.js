@@ -10,6 +10,7 @@ const app = express();
 const PORT = 7777;
 const githubFolder = /[\w]+\.github\.io/
 const githubPath = fs.readdirSync(path.join(__dirname, '../../../')).filter(path => githubFolder.test(path))[0];
+console.log(githubPath);
 
 const server = `http://localhost:${PORT}/portfolio.html`;
 
