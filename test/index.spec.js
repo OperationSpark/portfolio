@@ -4,13 +4,17 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const Browser = require('zombie');
+const fs = require('fs');
 const browser = new Browser();
 const app = express();
 const PORT = 7777;
+const githubFolder = /[\w]+\.github\.io/
+const githubPath = fs.readdirSync(path.join(__dirname, '../../../')).filter(path => githubFolder.test(path))[0];
+
 const server = `http://localhost:${PORT}/portfolio.html`;
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, '../../../')));
+app.use(express.static(path.join(__dirname, `../../../${githubPath}`)));
 app.listen(PORT, () => console.log(`Running on http://localhost:${PORT}`));
 
 describe('Portfolio', function(){
