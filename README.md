@@ -364,10 +364,8 @@ So, we created an unordered list with an `id` of `portfolio`.  This will allow u
 
 ### Checking Your Work
 
-Your Apache web server may still be running, and if it's not, review from our previous lesson, **first website**, the following sections:
+To check the status of your portfolio.html right-click and select preview to view the changes.
 
-* <a href="https://github.com/OperationSpark/first-website/blob/master/README.md#serve-your-website">serve your website</a>
-* <a href="https://github.com/OperationSpark/first-website/blob/master/README.md#serve-only-the-index-page">serve-only-the-index-page</a>
 
 ### TODO 6 : Installing the opspark CLI
 
@@ -379,13 +377,7 @@ To do so, in Cloud9, select your bash terminal in the Console View, and enter th
 
 ### TODO 7 : Initialize your Portfolio
 
-Once the opspark cli is installed, you can next initialize your `portfolio.html` page by running the following command:
-
-<img src="https://github.com/OperationSpark/portfolio/raw/master/img/os-init-pf.png">
-
-This will write a few `<script>` tags into your `portfolio.html` page (as seen in the above image on lines 101 and 102 of the text editor in Cloud9) so that in our next lessons, when we install projects, they will appear automatically in your portfolio!
-
-(If the command doesn't work, copy and paste these two pairs of `<script></script>` tags _after_ the closing `</body>` tag)
+Copy and paste these two pairs of `<script></script>` tags _before_ the closing `</body>` tag)
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
