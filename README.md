@@ -404,6 +404,10 @@ To do so, you'll need to enter the following git commands into your bash termina
 
 Enter the following commands, pressing ENTER after each one:
 
+Note: for the first command, replace `your-github-username` with your own github username.
+
+`cd your-github-username.github.io`
+
 `git add .`
 
 `git commit -m 'add portfolio.html file'`
