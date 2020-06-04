@@ -377,7 +377,7 @@ To do so, in Cloud9, select your bash terminal in the Console View, and enter th
 
 ### TODO 7 : Initialize your Portfolio
 
-Copy and paste these two pairs of `<script></script>` tags _before_ the closing `</body>` tag)
+Copy and paste these two pairs of `<script></script>` tags _before_ the closing `</body>` tag. (You will see a warning saying that `$ is not defined`. You can ignore it.)
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
