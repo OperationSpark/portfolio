@@ -30,7 +30,7 @@ Show off your peacock feathers as you begin to spread your wings and take flight
     - [TODO 6 : Installing the opspark CLI](#todo-6--installing-the-opspark-cli)
     - [TODO 7 : Initialize your Portfolio](#todo-7--initialize-your-portfolio)
     - [Extra Credit](#extra-credit)
-    - [Go Live](#go-live)
+  - [Go Live](#go-live)
 
 ## Prerequisites
 
@@ -396,7 +396,7 @@ Here's some other things to try:
 *   Add a border around the image
 *   Change the color of the background
 
-### Go Live
+# Go Live
 
 With GitHub Pages, once you push your changes from your Cloud9 workspace up to your GitHub repository, your page will be live on the Internet.
 
