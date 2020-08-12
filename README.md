@@ -27,8 +27,7 @@ Show off your peacock feathers as you begin to spread your wings and take flight
       - [Relative vs Absolute File Paths](#relative-vs-absolute-file-paths)
     - [TODO 5 : Create the Main Content](#todo-5--create-the-main-content)
     - [Checking Your Work](#checking-your-work)
-    - [TODO 6 : Installing the opspark CLI](#todo-6--installing-the-opspark-cli)
-    - [TODO 7 : Initialize your Portfolio](#todo-7--initialize-your-portfolio)
+    - [TODO 6 : Link Your Future Projects](#todo-6--link-your-future-projects)
     - [Extra Credit](#extra-credit)
   - [Go Live](#go-live)
 
@@ -158,7 +157,7 @@ id selectors in CSS are created with a hashtag and the id name:
 }
 ````
 
-Now, only the first `<div>` with `class="myClass"` will have a blue background. Meanwhile only the `<div>` with `id="myId"` will hvae a red background. Ok, let's move on to create our portfolio!
+Now, only the first `<div>` with `class="myClass"` will have a blue background. Meanwhile only the `<div>` with `id="myId"` will have a red background. Ok, let's move on to create our portfolio!
 
 ## Setup
 
@@ -360,31 +359,31 @@ Your code will look like this...
         </main>
 ````
 
-So, we created an unordered list with an `id` of `portfolio`.  This will allow us to access the portfolio `<ul>` to style it, which we are doing with a CSS selector, _and_, to use JavaScript to _dynamically_ add list items to our portfolio list. Right now, there's no items in the list, but later, when we install projects, we'll see our projects begin to list themselves, to appear dynamically in our portfolio page. The term dynamic means _constant change, activity, or progress_, which describes the state of our web page in that we can change it on the fly and thus its not _static_, which is the opposite of dynamic.
+So, we created an unordered list with an `id` of `portfolio`.  This will allow us to access the portfolio `<ul>` to style it, which we are doing with a CSS selector. Right now there are no items in the list, so we'll take care of that next. First, however, you might want to check and make sure everything looks good so far.
 
 ### Checking Your Work
 
 To check the status of your portfolio.html right-click and select preview to view the changes.
 
 
-### TODO 6 : Installing the opspark CLI
+### TODO 6 : Link Your Future Projects
 
-Remember we said we were going to dynamically list projects we've installed in our portfolio page? Well, in order to do so, we're going to install a command-line utility (cli) to help us with certain operations, like initializing scripts, and installing and configuring projects.
+Okay, now it's time to add in the links to your future projects. Find the following code:
 
-To do so, in Cloud9, select your bash terminal in the Console View, and enter the command `npm install -g opspark`, then press `Enter`.  It will take a few seconds to install all the files for the opspark cli...
-
-<img src="https://github.com/OperationSpark/portfolio/raw/master/img/install-opspark.png">
-
-### TODO 7 : Initialize your Portfolio
-
-Copy and paste these two pairs of `<script></script>` tags _before_ the closing `</body>` tag. (You will see a warning saying that `$ is not defined`. You can ignore it.)
-
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script id="portfolioScript">$(document).ready(function() {$.getJSON('projects/projects.json').then(function(data) { data.projects.forEach(function(project){ $('#portfolio').append('<li><a href="projects/' + project.name + '/">' + project.title + ' : ' + project.description + '</a></li>'); }); }); });</script>
+```HTML
+<ul id="portfolio">
+</ul>
 ```
 
-<a href="https://www.npmjs.com/package/opspark" target="_blank">To learn more about the opspark cli, click here...</a>
+You'll now want to put in the list items, each of which contains an anchor tag. We'll give you the first three, but if you want to add any more projects, you'll have to come back and add them in yourself.
+
+Add the following HTML into your `<ul>` element.
+
+```HTML
+    <li><a href="projects/platformer/">Platformer : A cannon - dodging, collectible - grabbing adventure game for Halleb0t</a></li>
+    <li><a href="projects/bouncing-box/">Bouncing Box : A project that gives you a taste of game development on the web </a></li>
+    <li><a href="projects/circularity/">Circularity : A motion poem using random number generation and velocity applied to circle shapes...</a></li>
+```
 
 ### Extra Credit
 
