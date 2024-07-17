@@ -34,7 +34,6 @@ Show off your peacock feathers as you begin to spread your wings and take flight
 ## Prerequisites
 
 * Students will require a GitHub account and will need to remember their GitHub username and password.
-* Students will require a Cloud9 account - they will login to Cloud9 using their GitHub credentials.
 * Students should have completed the <a href="https://github.com/OperationSpark/first-website/blob/master/README.md" target="_blank">First Website lesson.</a>
 
 ## Overview
@@ -161,7 +160,7 @@ Now, only the first `<div>` with `class="myClass"` will have a blue background. 
 
 ## Setup
 
-Open the Cloud9 workspace where you were working on your website from the 'first website' lesson. The workspace should be named something like `myusername_github_io`
+Open your portolio page repo in Stackblitz.
 
 ## Lesson Steps
 
@@ -169,8 +168,8 @@ Open the Cloud9 workspace where you were working on your website from the 'first
 
 We're going to build the page from scratch:
 
-* From the file system pane in Cloud9, and within the root directory of your website, right click and choose `New File`, and name the file `portfolio.html`.  When your done with this step, you should have two HTML files next to each other in the root directory of your website, `index.html` and `portfolio.html`.
-* Double-click on the `portfolio.html` file to open it in the Cloud9 text editor.
+* On the left side your Stackblitz workspace, right click and choose `New File`, and name the file `portfolio.html`.
+* Double-click on the `portfolio.html` file to open it in the Stackblitz code editor.
 * Finally, within the `portfolio.html` file, let's create the scaffolding HTML tags we need for any web page by adding the following HTML tags:
 
 ```html
@@ -367,14 +366,14 @@ So, we created an unordered list with an `id` of `portfolio`.  This will allow u
 
 ### Checking Your Work
 
-To check the status of your portfolio.html right-click and select preview to view the changes.
+To check the status of your portfolio.html right-click and select "Open with Live Server" to view your changes.
 
 
 ### TODO 6 : Installing the opspark CLI
 
 Remember we said we were going to dynamically list projects we've installed in our portfolio page? Well, in order to do so, we're going to install a command-line utility (cli) to help us with certain operations, like initializing scripts, and installing and configuring projects.
 
-To do so, in Cloud9, select your bash terminal in the Console View, and enter the command `npm install -g opspark`, then press `Enter`.  It will take a few seconds to install all the files for the opspark cli...
+To do so, in Stackblitz, select your bash terminal in the Console View, and enter the command `npm install -g opspark`, then press `Enter`.  It will take a few seconds to install all the files for the opspark cli...
 
 <img src="https://github.com/OperationSpark/portfolio/raw/master/img/install-opspark.png">
 
@@ -401,9 +400,9 @@ Here's some other things to try:
 
 # Go Live
 
-With GitHub Pages, once you push your changes from your Cloud9 workspace up to your GitHub repository, your page will be live on the Internet.
+With GitHub Pages, once you push your changes from your Stackblitz workspace up to your GitHub repository, your page will be live on the Internet.
 
-To do so, you'll need to enter the following git commands into your bash terminal. Select the bash terminal in the Console View - the bottom window pane in Cloud9.
+To do so, you'll need to enter the following git commands into your bash terminal. Select the bash terminal in the Console View.
 
 Enter the following commands, pressing ENTER after each one:
 
