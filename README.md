@@ -168,7 +168,16 @@ Open your portolio page repo in Stackblitz.
 
 We're going to build the page from scratch:
 
-* On the left side your Stackblitz workspace, right click and choose `New File`, and name the file `portfolio.html`.
+1. Locate the file structure on the left side of your workspace.
+
+2. Right click and select “New File” (See below)
+
+<img src="img/new-file.png" style="max-height: 350px">
+
+3. Make sure to name the file `portfolio.html` (See below)
+
+<img src="img/portfolio.png" style="max-height: 350px">
+
 * Double-click on the `portfolio.html` file to open it in the Stackblitz code editor.
 * Finally, within the `portfolio.html` file, let's create the scaffolding HTML tags we need for any web page by adding the following HTML tags:
 
@@ -375,7 +384,7 @@ Remember we said we were going to dynamically list projects we've installed in o
 
 To do so, in Stackblitz, select your bash terminal in the Console View, and enter the command `npm install -g opspark`, then press `Enter`.  It will take a few seconds to install all the files for the opspark cli...
 
-<img src="https://github.com/OperationSpark/portfolio/raw/master/img/install-opspark.png">
+<img src="img/install-opspark-2.png">
 
 ### TODO 7 : Initialize your Portfolio
 
@@ -405,10 +414,6 @@ With GitHub Pages, once you push your changes from your Stackblitz workspace up 
 To do so, you'll need to enter the following git commands into your bash terminal. Select the bash terminal in the Console View.
 
 Enter the following commands, pressing ENTER after each one:
-
-Note: for the first command, replace `your-github-username` with your own github username.
-
-`cd your-github-username.github.io`
 
 `git add .`
 
